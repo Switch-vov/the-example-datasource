@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<!-- 默认配置信息 -->
+	<default-config>
+		<!-- 四个基本连接信息 -->
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/test?useUnicode=true&amp;characterEncoding=utf8</property>
+		<property name="user">root</property>
+		<property name="password">123456</property>
+		<!-- 连接数配置信息 -->
+		<property name="initialPoolSize">5</property>
+		<property name="maxPoolSize">20</property>
+	</default-config>
+
+	<!-- 按名指定配置信息 -->
+	<named-config name="mysql2">
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/test2?useUnicode=true&amp;characterEncoding=utf8</property>
+		<property name="user">root</property>
+		<property name="password">123456</property>
+	</named-config>
+
+</c3p0-config>
